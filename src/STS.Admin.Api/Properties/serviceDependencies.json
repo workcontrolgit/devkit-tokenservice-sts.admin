@@ -6,19 +6,30 @@
     },
     "mssql1": {
       "type": "mssql",
-      "connectionId": "IdentityDbConnection"
+      "connectionId": "AdminAuditLogDbConnection"
     },
     "mssql2": {
       "type": "mssql",
-      "connectionId": "DataProtectionDbConnection"
+      "connectionId": "PersistedGrantDbConnection"
     },
     "mssql3": {
       "type": "mssql",
-      "connectionId": "PersistedGrantDbConnection"
+      "connectionId": "IdentityDbConnection"
     },
     "mssql4": {
       "type": "mssql",
+      "connectionId": "DataProtectionDbConnection"
+    },
+    "mssql5": {
+      "type": "mssql",
+      "connectionId": "AdminLogDbConnection"
+    },
+    "mssql6": {
+      "type": "mssql",
       "connectionId": "ConfigurationDbConnection"
+    },
+    "secrets2": {
+      "type": "secrets"
     }
   }
 }

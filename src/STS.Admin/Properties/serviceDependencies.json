@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets",
+      "connectionId": "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT"
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "DataProtectionDbConnection"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "IdentityDbConnection"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConfigurationDbConnection"
+    },
+    "mssql5": {
+      "type": "mssql",
+      "connectionId": "AdminAuditLogDbConnection"
+    },
+    "mssql6": {
+      "type": "mssql",
+      "connectionId": "AdminLogDbConnection"
+    },
+    "mssql4": {
+      "type": "mssql",
+      "connectionId": "PersistedGrantDbConnection"
+    }
+  }
+}

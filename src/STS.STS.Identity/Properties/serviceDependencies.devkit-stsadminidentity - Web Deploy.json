@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/Microsoft.KeyVault/vaults/DevKitKeyVault",
+      "type": "secrets.keyVault",
+      "connectionId": "ASPNETCORE_HOSTINGSTARTUP__KEYVAULT__CONFIGURATIONVAULT",
+      "secretStore": "AzureAppSettings"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup1')]/providers/Microsoft.Sql/servers/workcontroldbsrv/databases/devkitstsdb",
+      "type": "mssql.azure",
+      "connectionId": "IdentityDbConnection",
+      "secretStore": "AzureKeyVault"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup1')]/providers/Microsoft.Sql/servers/workcontroldbsrv/databases/devkitstsdb",
+      "type": "mssql.azure",
+      "connectionId": "DataProtectionDbConnection",
+      "secretStore": "AzureKeyVault"
+    },
+    "mssql3": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup1')]/providers/Microsoft.Sql/servers/workcontroldbsrv/databases/devkitstsdb",
+      "type": "mssql.azure",
+      "connectionId": "PersistedGrantDbConnection",
+      "secretStore": "AzureKeyVault"
+    },
+    "mssql4": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup1')]/providers/Microsoft.Sql/servers/workcontroldbsrv/databases/devkitstsdb",
+      "type": "mssql.azure",
+      "connectionId": "ConfigurationDbConnection",
+      "secretStore": "AzureKeyVault"
+    }
+  }
+}
