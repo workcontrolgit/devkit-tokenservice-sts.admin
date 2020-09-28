@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5CCF31EE-8E9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.Admin", "src\STS.Admin\STS.Admin.csproj", "{5E163BE7-DD74-4B1D-86E4-1FEA23C88D89}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.STS.Identity", "src\STS.STS.Identity\STS.STS.Identity.csproj", "{DC3527B9-8725-4D16-8C3A-01C942AA1B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.Admin.Identity", "src\STS.STS.Identity\STS.Admin.Identity.csproj", "{DC3527B9-8725-4D16-8C3A-01C942AA1B31}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.Admin.Api", "src\STS.Admin.Api\STS.Admin.Api.csproj", "{A0DFDB0F-45F7-4482-92BE-315A067C993B}"
 EndProject
