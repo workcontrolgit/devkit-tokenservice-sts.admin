@@ -14,6 +14,8 @@ using STS.STS.Identity.Helpers;
 using System;
 using Microsoft.AspNetCore.DataProtection;
 using STS.Shared.Helpers;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using System.Threading.Tasks;
 
 namespace STS.STS.Identity
 {
@@ -45,6 +47,26 @@ namespace STS.STS.Identity
 
             // Add services for authentication, including Identity model and external providers
             RegisterAuthentication(services);
+
+
+            services.AddAuthentication()
+                .AddOpenIdConnect("azuread", "Azure AD", options => Configuration.Bind("AzureAd", options));
+
+            services.Configure<OpenIdConnectOptions>("azuread", options =>
+            {
+                options.Scope.Add("openid");
+                options.Scope.Add("profile");
+                options.Events = new OpenIdConnectEvents()
+                {
+                    OnRedirectToIdentityProviderForSignOut = context =>
+                    {
+                        context.HandleResponse();
+                        context.Response.Redirect("/Account/Logout");
+                        return Task.FromResult(0);
+                    }
+                };
+            });
+
 
             // Add HSTS options
             RegisterHstsOptions(services);
