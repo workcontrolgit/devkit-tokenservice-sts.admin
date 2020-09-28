@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5CCF31EE-8E92-402B-A67B-66D50D9FFAD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.Admin", "src\STS.Admin\STS.Admin.csproj", "{5E163BE7-DD74-4B1D-86E4-1FEA23C88D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.Admin.Ui", "src\STS.Admin\STS.Admin.Ui.csproj", "{5E163BE7-DD74-4B1D-86E4-1FEA23C88D89}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "STS.Admin.Identity", "src\STS.STS.Identity\STS.Admin.Identity.csproj", "{DC3527B9-8725-4D16-8C3A-01C942AA1B31}"
 EndProject
