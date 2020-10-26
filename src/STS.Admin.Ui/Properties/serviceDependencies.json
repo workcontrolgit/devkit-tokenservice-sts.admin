@@ -27,6 +27,9 @@
     "mssql4": {
       "type": "mssql",
       "connectionId": "PersistedGrantDbConnection"
+    },
+    "secrets2": {
+      "type": "secrets"
     }
   }
 }
